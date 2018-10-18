@@ -1053,7 +1053,7 @@ public class SlidingUpPanelLayout extends ViewGroup {
         int screenX = parentLocation[0] + x;
         int screenY = parentLocation[1] + y;
         return screenX >= viewLocation[0] && screenX < viewLocation[0] + view.getWidth() &&
-                screenY >= viewLocation[1] && screenY < viewLocation[1] + view.getHeight();
+                screenY + 10 >= viewLocation[1] && screenY < viewLocation[1] + view.getHeight();
     }
 
     /*
